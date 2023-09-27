@@ -1,0 +1,135 @@
+header {
+    /* position: fixed; */
+    width: 100vw;
+    z-index: 999;
+    background-color: black;
+
+}
+
+.header-container {
+    /* padding: 10px 0; */
+    display: flex;
+    justify-items: center;
+    justify-content: start;
+    width: 100%;
+    /* border-bottom: 1px solid rgb(151, 147, 147); */
+}
+
+.header-container .icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-container .icons a {
+    padding: 0 10px;
+    font-size: 30px;
+    color: blue;
+}
+.logo{
+    margin: auto;
+}
+.logo h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+}
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.search input {
+    height: 30px;
+    width: 30vw;
+    padding: 0 10px;
+    border-radius: 40px;
+    font-weight: 100;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.search .search-icons {
+    color: gold;
+    /* top: 50%; */
+    right: 5px;
+    font-size: 20px;
+    position: absolute;
+    /* background-color: rgb(66, 0, 128); */
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container ul {
+    display: flex;
+
+}
+
+.nav-container ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    padding: 16px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: White;
+}
+
+.sub-menu ul {
+    z-index: 999;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    left: 0px;
+    justify-content: flex-start;
+}
+
+.sub-menu ul li {
+    float: left;
+    padding: 10px;
+    width: 200px;
+}
+
+.nav-container ul li:hover .sub-menu ul {
+    display: flex;
+}
+@media (max-width: 746px) {
+    .nav-container ul li{
+        font-size: 15px;
+    }
+}
+@media (max-width: 546px) {
+    .nav-container ul li{
+        padding: 16px 10px ;
+    }
+}
+@media (max-width: 454px) {
+    .logo{
+        background-color: gold;
+    }
+    .logo h1 {
+        font-size: 20px;
+    }
+    .header-container .icons a {
+        padding: 0 10px;
+        font-size: 20px;
+        color: blue;
+    }
+    
+}

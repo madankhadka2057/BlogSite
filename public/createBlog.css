@@ -1,0 +1,113 @@
+/* Reset some default styles for the page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat',' sans-serif';
+}
+/* .padding{
+    padding-top: 120px;
+} */
+
+/* Style the container for the blog form */
+.blog-form {
+    background-color: #fff;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+}
+
+/* Style the form heading */
+div h1 {
+    /* font-size: 24px; */
+    margin: 0 0 20px;
+    padding: 0;
+    color: #e5f31d;
+    text-align: center;
+    box-shadow: rgba(30, 30, 224, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/* Style form labels */
+.blog-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+    float: left;
+}
+
+/* Style form inputs and textarea */
+.blog-form input[type="text"],
+.blog-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+/* style for select catagory */
+/* Style the label */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  /* Style the select element */
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the select element when it's focused */
+  select:focus {
+    outline: none;
+    border-color: #007bff; /* Change to your preferred focus color */
+  }
+  
+
+/* Style the form submit button */
+.blog-form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    margin: 0 10px;
+}
+.blog-form input[ class="cancle"]{
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    margin: 0 10px;
+    background-color: red;
+}
+
+ .blog-form input[type="submit"]:hover {
+    background-color: #0056b3;
+    color: yellow;
+    scale: 1.03;
+}
+.blog-form input[ class="cancle"]:hover{
+    background-color: rgb(226, 7, 7);
+    color: yellow;
+    scale: 1.03;
+}

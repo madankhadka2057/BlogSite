@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="/blog.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+<body>
+  <%- include("header.ejs") %>
+  <section class="section">
+        <% allBlog.map((allBlog)=>{%>
+            <div class="cart">
+            <div class="cart_img">
+                <img src="cart2.jpg" class="img">
+                <h3 class="bgcolor"><%- allBlog.title %></h3>
+                <P class="bgcolor"><%- allBlog.author %></P>
+                <p class="bgcolor"><%- allBlog.description.slice(0, 16) %></p>
+                <P class="bgcolor"><%- allBlog.createdAt%></P>
+               <a href="/singleBlog/<%-allBlog.id%>"><button type="button" value="View More"></a> 
+            </div>
+        </div>
+        <%})%>
+    </section>
+</body>
+</html>

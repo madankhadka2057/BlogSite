@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="singleBlog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<%- include("header.ejs") %>
+        <div class="blog-container">
+            <% data.map((Blog)=>{%>
+                <div class="blog">
+                    <h2 class="blog-title"><%- Blog.title %></h2>
+                    <p class="blog-description"><%- Blog.description %></p>
+                    <p class="blog-category"><%- Blog.id %></p>
+                    <p class="blog-date"><%- Blog.createdAt %></p>
+                    <a href="/updateBlog/<%-Blog.id %>"><input type="button" value="Update"></a>
+                    <!-- <a href="<%-Blog.id%>"><input type="button" value="Delete"></a> -->
+                </div>
+            <%}) %>
+        </div>
+</html>

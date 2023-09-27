@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>Update Blog Post</title>
+</head>
+<body>
+    <%-include("header.ejs") %>
+    <div class="padding">
+        <div class="blog-form">
+            <h1>update a Blog Post</h1>
+            <form action="/updateBlog/<%-id%>" method="post">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                
+                <label for="category">Select a Category:</label>
+                <select id="category" name="category">
+                <option value="disable" disabled>select catagory</option>
+                <option value="Lifestyle">Lifestyle</option>
+                <option value="Health">Health</option>
+                <option value="Family">Family</option>
+                <option value="Management">Management</option>
+                <option value="Travel">Travel</option>
+                <option value="Work">Work</option>
+                <option value="Other">Other</option>
+                <!-- Add more options as needed -->
+                </select>
+    
+                <input type="submit" value="Update">
+                <a href="/"><input type="button" value="Cancle" class="cancle"></a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',' sans-serif';
+}
+
+/* Basic styling for the page */
+h1 {
+    font-size: 24px;
+}
+/* .padding{
+    padding-top: 130px;
+} */
+.blog-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #efefef;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.blog {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.blog-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.blog-category, .blog-date {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 10px;
+    }
+
+    .blog {
+        padding: 10px;
+    }
+}

@@ -45,7 +45,7 @@ app.get("/singleBlog/:id", async (req, res) => {
     res.render('updateBlog',{id:id})
   })
   app.post('/updateBlog/:id',async(req,res)=>{
-    // console.log(req.params)
+    const id=req.params.id
     const {title,author,description,category}=req.body;
     await blogs.update({
         title,
@@ -62,3 +62,4 @@ app.get("/singleBlog/:id", async (req, res) => {
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
+console.log("Hello  World")
